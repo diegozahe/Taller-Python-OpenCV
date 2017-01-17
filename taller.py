@@ -52,7 +52,8 @@ while True:
 		if contorno>5000:
 			# Dibujamos el rectángulo del bounds											
 			cv2.rectangle(frame, (x1, y1), (x1 + w, y1 + h), (0, 255, 0), 2)
-			contPersonas+=1			
+			contPersonas+=1	
+	print("Hay",contPersonas,"personas")
 	# Mostramos el video
 	cv2.imshow("Camara", frame)
 	cv2.imshow("Gris", gris)
